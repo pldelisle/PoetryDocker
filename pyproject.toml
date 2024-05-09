@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "Poetry_Docker_Example"
+name = "PoetryDocker"
 version = "1.0.0"
 description = "An example for running Poetry within a Docker container."
 authors = ["Pierre-Luc Delisle <github@pierre-luc-delisle.com>"]
