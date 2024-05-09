@@ -1,4 +1,4 @@
 # PoetryDocker
 
-To build the Dockerfile: 
+To build the Dockerfile, run:   
 ``` docker build . ```
