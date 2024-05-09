@@ -20,4 +20,4 @@ WORKDIR /opt/PoetryDocker
 
 RUN poetry install && rm -rf $POETRY_CACHE_DIR
 
-CMD "pytest"
+RUN . $(poetry env info --path)/bin/activate && pytest
