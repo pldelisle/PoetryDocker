@@ -10,11 +10,13 @@ RUN python3 -m venv $POETRY_HOME && \
     $POETRY_HOME/bin/pip install pip setuptools && \
     $POETRY_HOME/bin/pip install poetry==1.8.3
 
-WORKDIR /
-
 ENV PATH="/$POETRY_HOME/bin/:$POETRY_HOME/bin:$PATH"
 
+WORKDIR /opt
+
 RUN git clone https://github.com/pldelisle/PoetryDocker.git
+
+WORKDIR /opt/PoetryDocker
 
 RUN poetry install && rm -rf $POETRY_CACHE_DIR
 
